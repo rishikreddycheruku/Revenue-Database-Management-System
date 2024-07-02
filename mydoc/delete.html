@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Non-Tax Revenue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #009dff;
+            color: white;
+            padding: 20px 0;
+            margin-top: 0px;
+        }
+
+        th{
+            width: 400px;
+        }
+
+        .navbar {
+            background-color: #857d7d;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .logo {
+            padding: 10px;
+        }
+
+        .search-bar {
+            padding: 10px;
+        }
+
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .search-icon {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form {
+            margin: 20px auto;
+            width: 80%;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        input[type="text"],
+        input[type="number"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #009dff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #000000;
+        }
+
+        .info-box {
+            background-color: #ccc;
+            border: 1px solid #999;
+            padding: 10px;
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Delete The Details For The Non-Tax Revenue Database</h1>
+    <form action="http://localhost/mydoc/v_delete.php" method="post" target="_self">
+        <br>
+        <table>
+            <tr>
+                <th>serial no</th>
+                <td><input type="number" name="serial_no"></td>
+            </tr>
+        </table>
+        <br>
+        <table>
+            <tr>
+                <th>s_id</th>
+                <td><input type="number" name="s_id"></td>
+            </tr>
+        </table>
+        <br>
+        <!-- Revenue Table Input -->
+        <table>
+            <tr>
+                <th>revenue_id</th>
+                <td><input type="number" name="revenue_id"></td>
+            </tr>
+        </table>
+        <br>
+        
+        <!-- Departments Table Input -->
+        <table>
+            <tr>
+                <th>dep_id</th>
+                <td><input type="number" name="dep_id"></td>
+            </tr>
+        </table>
+        <br>
+        
+        <!-- Expenditures Table Input -->
+        <table>
+            <tr>
+                <th>e_id</th>
+                <td><input type="number" name="e_id"></td>
+            </tr>
+        </table>
+        <br>
+        
+        <!-- Beneficiaries Table Input -->
+        <table>
+            <tr>
+                <th>ben_id</th>
+                <td><input type="number" name="ben_id"></td>
+            </tr>
+        </table>
+        <br>
+        
+        <!-- Legislations Table Input -->
+        <table>
+            <tr>
+                <th>l_id</th>
+                <td><input type="number" name="l_id"></td>
+            </tr>
+        </table>
+        <br>
+        
+        <!-- Documents Table Input -->
+        <table>
+            <tr>
+                <th>d_id</th>
+                <td><input type="number" name="d_id"></td>
+            </tr>
+        </table>
+        <br>
+
+        <!-- Government Employees Table Input -->
+        <table>
+            <tr>
+                <th>gemp_id</th>
+                <td><input type="number" name="gemp_id"></td>
+            </tr>
+        </table>
+        <br>
+
+        <!-- Transactions Table Input -->
+        <table>
+            <tr>
+                <th>t_id</th>
+                <td><input type="number" name="t_id"></td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Submit" name="submit">
+
+    </form>
+</body>
+</html>
