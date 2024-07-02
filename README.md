@@ -44,7 +44,7 @@ This project is a web-based application designed to manage non-tax revenue data 
 4. **Accessing the Application:**
    - Open your web browser and navigate to `http://localhost/non-tax-revenue`.
 
-## Using the Application
+## Usage
 
 After setting up the project and accessing the `index.html` file, follow these steps to use the Non-Tax Revenue Management System:
 
